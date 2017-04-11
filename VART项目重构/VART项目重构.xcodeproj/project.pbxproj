@@ -16,6 +16,7 @@
 		AC235D5D1E9A116F00500534 /* AIELoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D581E9A116F00500534 /* AIELoopView.m */; };
 		AC235D5E1E9A116F00500534 /* AIELoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */; };
 		AC235D5F1E9A116F00500534 /* AIELoopViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */; };
+		AC57DE781E9CE84E00C13A05 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */; };
 		ACA414F81E98CB0A00B03AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA414F71E98CB0A00B03AEC /* main.m */; };
 		ACA415061E98CB0A00B03AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */; };
 		ACA415161E98CE7B00B03AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA415151E98CE7B00B03AEC /* Assets.xcassets */; };
@@ -102,6 +103,9 @@
 		AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIELoopViewCell.m; sourceTree = "<group>"; };
 		AC235D5B1E9A116F00500534 /* AIELoopViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIELoopViewLayout.h; sourceTree = "<group>"; };
 		AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIELoopViewLayout.m; sourceTree = "<group>"; };
+		AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMacroEnvironment.h; sourceTree = "<group>"; };
+		AC57DE761E9CE84E00C13A05 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		ACA414F31E98CB0A00B03AEC /* VART项目重构.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VART项目重构.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA414F71E98CB0A00B03AEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACA415051E98CB0A00B03AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -278,6 +282,15 @@
 			path = LoopView;
 			sourceTree = "<group>";
 		};
+		AC57DE741E9CE6B200C13A05 /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				AC57DE761E9CE84E00C13A05 /* NetWorkManager.h */,
+				AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */,
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
 		ACA414EA1E98CB0A00B03AEC = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +364,7 @@
 				ACEB14791E98E6DA00C50160 /* PrefixHeader.pch */,
 				ACEB147D1E98E9E400C50160 /* VTMacroColors.h */,
 				ACEB14841E99109600C50160 /* VTMacroMeasurement.h */,
+				AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */,
 			);
 			path = configure;
 			sourceTree = "<group>";
@@ -365,6 +379,7 @@
 		ACA4151F1E98CFA600B03AEC /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				AC57DE741E9CE6B200C13A05 /* NetWorkManager */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -875,6 +890,7 @@
 				ACA416CD1E98D65400B03AEC /* SDWebImageDownloaderOperation.m in Sources */,
 				ACA416461E98D65400B03AEC /* MASViewAttribute.m in Sources */,
 				ACA4154B1E98D3E600B03AEC /* VTDiscoveryViewController.m in Sources */,
+				AC57DE781E9CE84E00C13A05 /* NetWorkManager.m in Sources */,
 				ACA416431E98D65400B03AEC /* MASConstraint.m in Sources */,
 				ACEB14821E98EE5E00C50160 /* UITableViewCell+VTCell.m in Sources */,
 			);
