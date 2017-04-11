@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382107D2E931867C7BFD9CF2 /* libPods-VART项目重构.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A7C74868F4B7C5616A469 /* libPods-VART项目重构.a */; };
 		AC0FB68B1E9A660E00A662F7 /* VTSpaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FB6891E9A660E00A662F7 /* VTSpaceTableViewCell.m */; };
 		AC0FB68C1E9A660E00A662F7 /* VTSpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0FB68A1E9A660E00A662F7 /* VTSpaceTableViewCell.xib */; };
 		AC0FB68F1E9A714800A662F7 /* VTCityTopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FB68E1E9A714800A662F7 /* VTCityTopMenu.m */; };
@@ -54,7 +55,6 @@
 		ACA416A71E98D65400B03AEC /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415DB1E98D65300B03AEC /* NSObject+MJCoding.m */; };
 		ACA416A81E98D65400B03AEC /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415DD1E98D65300B03AEC /* NSObject+MJKeyValue.m */; };
 		ACA416A91E98D65400B03AEC /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415DF1E98D65300B03AEC /* NSObject+MJMember.m */; };
-		ACA416C51E98D65400B03AEC /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA416181E98D65400B03AEC /* TencentOpenAPI.framework */; };
 		ACA416C61E98D65400B03AEC /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACA416191E98D65400B03AEC /* TencentOpenApi_IOS_Bundle.bundle */; };
 		ACA416C71E98D65400B03AEC /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4161C1E98D65400B03AEC /* MKAnnotationView+WebCache.m */; };
 		ACA416C81E98D65400B03AEC /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4161E1E98D65400B03AEC /* NSData+ImageContentType.m */; };
@@ -72,7 +72,6 @@
 		ACA416D41E98D65400B03AEC /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA416371E98D65400B03AEC /* UIImageView+HighlightedWebCache.m */; };
 		ACA416D51E98D65400B03AEC /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA416391E98D65400B03AEC /* UIImageView+WebCache.m */; };
 		ACA416D61E98D65400B03AEC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4163B1E98D65400B03AEC /* UIView+WebCacheOperation.m */; };
-		ACA416D71E98D65400B03AEC /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4163D1E98D65400B03AEC /* libWeChatSDK.a */; };
 		ACCC83601E9BB3BF00C94231 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */; };
 		ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835F1E9BB3BF00C94231 /* UIView+Extension.m */; };
 		ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB147B1E98E99600C50160 /* ToolBaseClass.m */; };
@@ -86,6 +85,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B4FE5AA030A45A714D27B0F /* Pods-VART项目重构.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VART项目重构.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VART项目重构/Pods-VART项目重构.debug.xcconfig"; sourceTree = "<group>"; };
+		929A7C74868F4B7C5616A469 /* libPods-VART项目重构.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VART项目重构.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0FB6881E9A660E00A662F7 /* VTSpaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTSpaceTableViewCell.h; sourceTree = "<group>"; };
 		AC0FB6891E9A660E00A662F7 /* VTSpaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSpaceTableViewCell.m; sourceTree = "<group>"; };
 		AC0FB68A1E9A660E00A662F7 /* VTSpaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTSpaceTableViewCell.xib; sourceTree = "<group>"; };
@@ -221,6 +222,8 @@
 		ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		ACCC835E1E9BB3BF00C94231 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		ACCC835F1E9BB3BF00C94231 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		ACCC83651E9C9B7D00C94231 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ACCC83671E9C9B9800C94231 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACEB14791E98E6DA00C50160 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ACEB147A1E98E99600C50160 /* ToolBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBaseClass.h; sourceTree = "<group>"; };
 		ACEB147B1E98E99600C50160 /* ToolBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBaseClass.m; sourceTree = "<group>"; };
@@ -238,6 +241,7 @@
 		ACEB149F1E994D5C00C50160 /* VTFairTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFairTableViewCell.h; sourceTree = "<group>"; };
 		ACEB14A01E994D5C00C50160 /* VTFairTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFairTableViewCell.m; sourceTree = "<group>"; };
 		ACEB14A11E994D5C00C50160 /* VTFairTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTFairTableViewCell.xib; sourceTree = "<group>"; };
+		EF615DB4BE774F2B8185F551 /* Pods-VART项目重构.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VART项目重构.release.xcconfig"; path = "Pods/Target Support Files/Pods-VART项目重构/Pods-VART项目重构.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,14 +249,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA416D71E98D65400B03AEC /* libWeChatSDK.a in Frameworks */,
-				ACA416C51E98D65400B03AEC /* TencentOpenAPI.framework in Frameworks */,
+				382107D2E931867C7BFD9CF2 /* libPods-VART项目重构.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15BCF26171125ADD9EDCD995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B4FE5AA030A45A714D27B0F /* Pods-VART项目重构.debug.xcconfig */,
+				EF615DB4BE774F2B8185F551 /* Pods-VART项目重构.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC235D561E9A116F00500534 /* LoopView */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +283,8 @@
 			children = (
 				ACA414F51E98CB0A00B03AEC /* VART项目重构 */,
 				ACA414F41E98CB0A00B03AEC /* Products */,
+				15BCF26171125ADD9EDCD995 /* Pods */,
+				D4860D15EB33445D63FD4875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -659,6 +673,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4860D15EB33445D63FD4875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC83671E9C9B9800C94231 /* Foundation.framework */,
+				ACCC83651E9C9B7D00C94231 /* libsqlite3.tbd */,
+				929A7C74868F4B7C5616A469 /* libPods-VART项目重构.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -666,9 +690,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA4150A1E98CB0A00B03AEC /* Build configuration list for PBXNativeTarget "VART项目重构" */;
 			buildPhases = (
+				3D36D944DFEC5D6FFB0DD399 /* [CP] Check Pods Manifest.lock */,
 				ACA414EF1E98CB0A00B03AEC /* Sources */,
 				ACA414F01E98CB0A00B03AEC /* Frameworks */,
 				ACA414F11E98CB0A00B03AEC /* Resources */,
+				83624EEE388846858F80E3E2 /* [CP] Embed Pods Frameworks */,
+				B4ADF8218B1FCACA660D3E97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -734,6 +761,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D36D944DFEC5D6FFB0DD399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83624EEE388846858F80E3E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VART项目重构/Pods-VART项目重构-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4ADF8218B1FCACA660D3E97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VART项目重构/Pods-VART项目重构-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACA414EF1E98CB0A00B03AEC /* Sources */ = {
@@ -911,6 +986,7 @@
 		};
 		ACA4150B1E98CB0A00B03AEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4FE5AA030A45A714D27B0F /* Pods-VART项目重构.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -935,6 +1011,7 @@
 		};
 		ACA4150C1E98CB0A00B03AEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF615DB4BE774F2B8185F551 /* Pods-VART项目重构.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

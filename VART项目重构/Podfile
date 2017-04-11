@@ -1,0 +1,6 @@
+project 'VART项目重构.xcodeproj'
+platform :ios, ‘8.0’
+target 'VART项目重构' do
+pod "MJRefresh"
+pod "AFNetworking"
+end
