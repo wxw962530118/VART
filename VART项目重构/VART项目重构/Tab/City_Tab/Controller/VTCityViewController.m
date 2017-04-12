@@ -39,6 +39,7 @@
     [super viewDidLoad];
     [self createTitleView];
     [self createFilterView];
+    
     [self createNavMenuView];
     [self createTableView];
 }
@@ -67,6 +68,11 @@
 #pragma mark --- 导航栏按钮点击事件
 - (void)titleBtnClick{
     [self.navMenuView showTopMenuView];
+    
+    
+    
+    
+    
 }
 
 #pragma mark --- 懒加载控件

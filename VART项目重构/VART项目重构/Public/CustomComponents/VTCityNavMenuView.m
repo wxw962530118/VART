@@ -51,7 +51,7 @@
 
 -(UIWindow *)bgWindow{
     if (_bgWindow == nil) {
-        _bgWindow = [[UIWindow alloc]initWithFrame:CGRectMake(0,52,ScreenWidth, ScreenHeight)];
+        _bgWindow = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
         _bgWindow.backgroundColor = [UIColor clearColor];
         _bgWindow.alpha  = 0;
         _bgWindow.hidden = NO;
@@ -90,7 +90,7 @@
 
 -(UIImageView *)imageView{
     if (_imageView == nil) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,120,0)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,56,120,0)];
         UIImage * image = [UIImage imageNamed:@"top_dialog_bg"];
         // 左端盖宽度
         NSInteger leftCapWidth = image.size.width * 0.5f;

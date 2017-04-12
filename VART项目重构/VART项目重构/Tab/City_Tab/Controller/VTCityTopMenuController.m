@@ -7,7 +7,7 @@
 //
 
 #import "VTCityTopMenuController.h"
-
+#import "VTCityNavMenuContentModel.h"
 @interface VTCityTopMenuController ()<UITableViewDelegate,UITableViewDataSource>
 
 /**imageView*/
@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSArray *textArray;
 /**<#注释#>*/
 @property (nonatomic, strong) UITableView *tableView;
+/**<#注释#>*/
+@property (nonatomic, strong) NSMutableArray<VTCityNavMenuContentModel *> *titleArray;
 @end
 
 @implementation VTCityTopMenuController
@@ -41,12 +43,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return _textArray.count;
+    return _titleArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:nil];
-    cell.textLabel.text = _textArray[indexPath.row];
+    cell.textLabel.text = _titleArray[indexPath.row];
     return cell;
 }
 @end
