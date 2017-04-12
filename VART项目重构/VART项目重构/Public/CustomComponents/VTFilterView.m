@@ -66,11 +66,6 @@
         }
         //默认点击第一个按钮
         if (i == 0) {
-//            [self.titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//            self.titleButton.enabled = NO;
-//            self.selectButton = self.titleButton;
-//            self.indicatorView.width = self.titleButton.width;
-//            self.indicatorView.centerX = self.titleButton.centerX;
             [self layoutIfNeeded];
             [self btnClick:self.titleButton];
         }
@@ -86,7 +81,7 @@
     self.selectButton = sender;
     [self.selectButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [UIView animateWithDuration:0.1 animations:^{
-        self.indicatorView.width = sender.titleLabel.width;
+        self.indicatorView.width = sender.width;
         self.indicatorView.centerX = sender.centerX;
     }];
 }

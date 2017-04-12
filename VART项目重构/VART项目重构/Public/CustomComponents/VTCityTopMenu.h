@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^cityTopMenuCallBack)(NSInteger selectIndex);
+
 @interface VTCityTopMenu : UIView
 
-- (void)topMenuRowText:(NSArray *)rowText topView:(UIView *)topView;
+//- (void)topMenuRowText:(NSArray *)rowText topView:(UIView *)topView;
++(instancetype )initWithTitleArray:(NSArray *)titleArray callBack:(cityTopMenuCallBack)callBack;
 @end

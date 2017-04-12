@@ -20,24 +20,15 @@
 
 @implementation VTCityTopMenuController
 
-- (void)containerViewWillLayoutSubviews {
-    
-  
-    
-}
 
-////重置本控制器的大小
-//-(CGSize)preferredContentSize{
-//    
-//    
-//}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.preferredContentSize = CGSizeMake(200, 200);
-    _textArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6"];
+    
+    _textArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6",@"3",@"4",@"5",@"6"];
     self.view.backgroundColor = [UIColor redColor];
-    self.imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth - 200, 300)];
     self.imageView.image = [UIImage imageNamed:@"WXWImage"];
+    self.imageView.userInteractionEnabled = YES;
     [self.view addSubview:self.imageView];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 20, self.imageView.frame.size.width - 20, self.imageView.frame.size.height - 30) style:(UITableViewStylePlain)];
