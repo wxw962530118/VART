@@ -13,7 +13,6 @@
 		AC235D5D1E9A116F00500534 /* AIELoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D581E9A116F00500534 /* AIELoopView.m */; };
 		AC235D5E1E9A116F00500534 /* AIELoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */; };
 		AC235D5F1E9A116F00500534 /* AIELoopViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */; };
-		AC57DE781E9CE84E00C13A05 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */; };
 		AC8D1FFA1E9E542C0031FAC7 /* VTPopAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D1FF91E9E542C0031FAC7 /* VTPopAnimate.m */; };
 		ACA414F81E98CB0A00B03AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA414F71E98CB0A00B03AEC /* main.m */; };
 		ACA415061E98CB0A00B03AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */; };
@@ -70,6 +69,11 @@
 		ACA416D41E98D65400B03AEC /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA416371E98D65400B03AEC /* UIImageView+HighlightedWebCache.m */; };
 		ACA416D51E98D65400B03AEC /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA416391E98D65400B03AEC /* UIImageView+WebCache.m */; };
 		ACA416D61E98D65400B03AEC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4163B1E98D65400B03AEC /* UIView+WebCacheOperation.m */; };
+		ACA5400D1E9F4B1F00115BA7 /* VTNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5400C1E9F4B1F00115BA7 /* VTNetWorkManager.m */; };
+		ACA540101E9F4BA400115BA7 /* VTAusleseNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5400F1E9F4BA400115BA7 /* VTAusleseNetWork.m */; };
+		ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540121E9F4BC600115BA7 /* VTCityNetWork.m */; };
+		ACA540161E9F4BCE00115BA7 /* VTDiscoveryNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540151E9F4BCE00115BA7 /* VTDiscoveryNetWork.m */; };
+		ACA540191E9F4BD900115BA7 /* VTPersonalNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */; };
 		ACCC83601E9BB3BF00C94231 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */; };
 		ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835F1E9BB3BF00C94231 /* UIView+Extension.m */; };
 		ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB147B1E98E99600C50160 /* ToolBaseClass.m */; };
@@ -104,8 +108,6 @@
 		AC235D5B1E9A116F00500534 /* AIELoopViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIELoopViewLayout.h; sourceTree = "<group>"; };
 		AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIELoopViewLayout.m; sourceTree = "<group>"; };
 		AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMacroEnvironment.h; sourceTree = "<group>"; };
-		AC57DE761E9CE84E00C13A05 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
-		AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		AC8D1FF81E9E542C0031FAC7 /* VTPopAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPopAnimate.h; sourceTree = "<group>"; };
 		AC8D1FF91E9E542C0031FAC7 /* VTPopAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPopAnimate.m; sourceTree = "<group>"; };
 		ACA414F31E98CB0A00B03AEC /* VART项目重构.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VART项目重构.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,16 @@
 		ACA4163E1E98D65400B03AEC /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		ACA4163F1E98D65400B03AEC /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		ACA416401E98D65400B03AEC /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		ACA5400B1E9F4B1F00115BA7 /* VTNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNetWorkManager.h; sourceTree = "<group>"; };
+		ACA5400C1E9F4B1F00115BA7 /* VTNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNetWorkManager.m; sourceTree = "<group>"; };
+		ACA5400E1E9F4BA400115BA7 /* VTAusleseNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseNetWork.h; sourceTree = "<group>"; };
+		ACA5400F1E9F4BA400115BA7 /* VTAusleseNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseNetWork.m; sourceTree = "<group>"; };
+		ACA540111E9F4BC600115BA7 /* VTCityNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityNetWork.h; sourceTree = "<group>"; };
+		ACA540121E9F4BC600115BA7 /* VTCityNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityNetWork.m; sourceTree = "<group>"; };
+		ACA540141E9F4BCE00115BA7 /* VTDiscoveryNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDiscoveryNetWork.h; sourceTree = "<group>"; };
+		ACA540151E9F4BCE00115BA7 /* VTDiscoveryNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDiscoveryNetWork.m; sourceTree = "<group>"; };
+		ACA540171E9F4BD900115BA7 /* VTPersonalNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPersonalNetWork.h; sourceTree = "<group>"; };
+		ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPersonalNetWork.m; sourceTree = "<group>"; };
 		ACCC835C1E9BB3BF00C94231 /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		ACCC835E1E9BB3BF00C94231 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -297,11 +309,47 @@
 			path = LoopView;
 			sourceTree = "<group>";
 		};
-		AC57DE741E9CE6B200C13A05 /* NetWorkManager */ = {
+		AC8D20191E9F48DA0031FAC7 /* CityNetWork */ = {
 			isa = PBXGroup;
 			children = (
-				AC57DE761E9CE84E00C13A05 /* NetWorkManager.h */,
-				AC57DE771E9CE84E00C13A05 /* NetWorkManager.m */,
+				ACA540111E9F4BC600115BA7 /* VTCityNetWork.h */,
+				ACA540121E9F4BC600115BA7 /* VTCityNetWork.m */,
+			);
+			path = CityNetWork;
+			sourceTree = "<group>";
+		};
+		AC8D201A1E9F48DA0031FAC7 /* DiscoveryNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				ACA540141E9F4BCE00115BA7 /* VTDiscoveryNetWork.h */,
+				ACA540151E9F4BCE00115BA7 /* VTDiscoveryNetWork.m */,
+			);
+			path = DiscoveryNetWork;
+			sourceTree = "<group>";
+		};
+		AC8D201E1E9F48DA0031FAC7 /* PersonalNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				ACA540171E9F4BD900115BA7 /* VTPersonalNetWork.h */,
+				ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */,
+			);
+			path = PersonalNetWork;
+			sourceTree = "<group>";
+		};
+		AC8D20201E9F48FE0031FAC7 /* AusleseNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5400E1E9F4BA400115BA7 /* VTAusleseNetWork.h */,
+				ACA5400F1E9F4BA400115BA7 /* VTAusleseNetWork.m */,
+			);
+			path = AusleseNetWork;
+			sourceTree = "<group>";
+		};
+		AC8D20211E9F492A0031FAC7 /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5400B1E9F4B1F00115BA7 /* VTNetWorkManager.h */,
+				ACA5400C1E9F4B1F00115BA7 /* VTNetWorkManager.m */,
 			);
 			path = NetWorkManager;
 			sourceTree = "<group>";
@@ -394,7 +442,11 @@
 		ACA4151F1E98CFA600B03AEC /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				AC57DE741E9CE6B200C13A05 /* NetWorkManager */,
+				AC8D20211E9F492A0031FAC7 /* NetWorkManager */,
+				AC8D20201E9F48FE0031FAC7 /* AusleseNetWork */,
+				AC8D20191E9F48DA0031FAC7 /* CityNetWork */,
+				AC8D201A1E9F48DA0031FAC7 /* DiscoveryNetWork */,
+				AC8D201E1E9F48DA0031FAC7 /* PersonalNetWork */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -914,6 +966,7 @@
 				ACA4164A1E98D65400B03AEC /* View+MASAdditions.m in Sources */,
 				ACA416CE1E98D65400B03AEC /* SDWebImageManager.m in Sources */,
 				ACA416CF1E98D65400B03AEC /* SDWebImagePrefetcher.m in Sources */,
+				ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */,
 				ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */,
 				ACA416D01E98D65400B03AEC /* UIButton+WebCache.m in Sources */,
 				ACA416A51E98D65400B03AEC /* MJType.m in Sources */,
@@ -926,7 +979,9 @@
 				ACF705541E9E06BE00922B95 /* VTCityNavMenuContentCell.m in Sources */,
 				ACA416441E98D65400B03AEC /* MASConstraintMaker.m in Sources */,
 				AC235D5E1E9A116F00500534 /* AIELoopViewCell.m in Sources */,
+				ACA540161E9F4BCE00115BA7 /* VTDiscoveryNetWork.m in Sources */,
 				AC0FBC811E99DA7F003B15F0 /* LoopScrollView.m in Sources */,
+				ACA540101E9F4BA400115BA7 /* VTAusleseNetWork.m in Sources */,
 				ACEB14981E99236B00C50160 /* VTFilterView.m in Sources */,
 				ACA4152F1E98D09700B03AEC /* VTBaseModel.m in Sources */,
 				ACA416D61E98D65400B03AEC /* UIView+WebCacheOperation.m in Sources */,
@@ -938,12 +993,13 @@
 				ACA415281E98D03500B03AEC /* VTRootNavigationController.m in Sources */,
 				ACA416481E98D65400B03AEC /* NSArray+MASAdditions.m in Sources */,
 				ACA416A71E98D65400B03AEC /* NSObject+MJCoding.m in Sources */,
+				ACA540191E9F4BD900115BA7 /* VTPersonalNetWork.m in Sources */,
 				ACA416CA1E98D65400B03AEC /* SDWebImageCompat.m in Sources */,
 				ACA416C91E98D65400B03AEC /* SDImageCache.m in Sources */,
+				ACA5400D1E9F4B1F00115BA7 /* VTNetWorkManager.m in Sources */,
 				ACA416CD1E98D65400B03AEC /* SDWebImageDownloaderOperation.m in Sources */,
 				ACA416461E98D65400B03AEC /* MASViewAttribute.m in Sources */,
 				ACA4154B1E98D3E600B03AEC /* VTDiscoveryViewController.m in Sources */,
-				AC57DE781E9CE84E00C13A05 /* NetWorkManager.m in Sources */,
 				ACF705571E9E06D500922B95 /* VTCityNavMenuContentModel.m in Sources */,
 				ACA416431E98D65400B03AEC /* MASConstraint.m in Sources */,
 				ACEB14821E98EE5E00C50160 /* UITableViewCell+VTCell.m in Sources */,

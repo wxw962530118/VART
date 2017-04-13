@@ -9,7 +9,12 @@
 #ifndef VTMacroMeasurement_h
 #define VTMacroMeasurement_h
 
+#define kPrivateErrorDomain @"com.aiep.ServerCallBackError"
+
+#define kPrivateErrorMessage @"com.aiep.ServerCallBackError.message"
+
 #define ScreenWidth ([UIScreen mainScreen].bounds.size.width) //屏幕宽度
+
 #define ScreenHeight ([UIScreen mainScreen].bounds.size.height) //屏幕高度
 
 #endif /* VTMacroMeasurement_h */

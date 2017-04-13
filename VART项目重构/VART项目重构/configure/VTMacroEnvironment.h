@@ -16,10 +16,13 @@
 #define TCMacroEnvironment_h
 
 #ifdef DEBUG // 处于开发阶段
-#define TCLog(...) NSLog(__VA_ARGS__)
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#define ErrorLog(...) NSLog(__VA_ARGS__)
 
 #else // 处于发布阶段
-#define TCLog(...)
+#define NSLog(...)
 #endif
 
 #ifndef __OPTIMIZE__
