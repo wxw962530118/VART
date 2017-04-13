@@ -10,7 +10,6 @@
 #import "VTFilterView.h"
 #import "VTFairTableViewCell.h"
 #import "VTSpaceTableViewCell.h"
-#import "VTCityTopMenu.h"
 #import "VTCityTopMenuController.h"
 #import "VTPopAnimate.h"
 #import "VTCityNavMenuView.h"

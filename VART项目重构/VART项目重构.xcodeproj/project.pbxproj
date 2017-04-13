@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		382107D2E931867C7BFD9CF2 /* libPods-VART项目重构.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A7C74868F4B7C5616A469 /* libPods-VART项目重构.a */; };
-		AC0FB68F1E9A714800A662F7 /* VTCityTopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FB68E1E9A714800A662F7 /* VTCityTopMenu.m */; };
 		AC0FBC811E99DA7F003B15F0 /* LoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FBC801E99DA7F003B15F0 /* LoopScrollView.m */; };
 		AC235D5D1E9A116F00500534 /* AIELoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D581E9A116F00500534 /* AIELoopView.m */; };
 		AC235D5E1E9A116F00500534 /* AIELoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */; };
@@ -74,6 +73,8 @@
 		ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540121E9F4BC600115BA7 /* VTCityNetWork.m */; };
 		ACA540161E9F4BCE00115BA7 /* VTDiscoveryNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540151E9F4BCE00115BA7 /* VTDiscoveryNetWork.m */; };
 		ACA540191E9F4BD900115BA7 /* VTPersonalNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */; };
+		ACA5401D1E9F70D200115BA7 /* VTGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */; };
+		ACA540201E9F711C00115BA7 /* VTLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */; };
 		ACCC83601E9BB3BF00C94231 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */; };
 		ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835F1E9BB3BF00C94231 /* UIView+Extension.m */; };
 		ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB147B1E98E99600C50160 /* ToolBaseClass.m */; };
@@ -97,8 +98,6 @@
 /* Begin PBXFileReference section */
 		6B4FE5AA030A45A714D27B0F /* Pods-VART项目重构.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VART项目重构.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VART项目重构/Pods-VART项目重构.debug.xcconfig"; sourceTree = "<group>"; };
 		929A7C74868F4B7C5616A469 /* libPods-VART项目重构.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VART项目重构.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC0FB68D1E9A714800A662F7 /* VTCityTopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityTopMenu.h; sourceTree = "<group>"; };
-		AC0FB68E1E9A714800A662F7 /* VTCityTopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityTopMenu.m; sourceTree = "<group>"; };
 		AC0FBC7F1E99DA7F003B15F0 /* LoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollView.h; sourceTree = "<group>"; };
 		AC0FBC801E99DA7F003B15F0 /* LoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollView.m; sourceTree = "<group>"; };
 		AC235D571E9A116F00500534 /* AIELoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIELoopView.h; sourceTree = "<group>"; };
@@ -234,6 +233,10 @@
 		ACA540151E9F4BCE00115BA7 /* VTDiscoveryNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDiscoveryNetWork.m; sourceTree = "<group>"; };
 		ACA540171E9F4BD900115BA7 /* VTPersonalNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPersonalNetWork.h; sourceTree = "<group>"; };
 		ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPersonalNetWork.m; sourceTree = "<group>"; };
+		ACA5401B1E9F70D200115BA7 /* VTGuidePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTGuidePageViewController.h; sourceTree = "<group>"; };
+		ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTGuidePageViewController.m; sourceTree = "<group>"; };
+		ACA5401E1E9F711C00115BA7 /* VTLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTLaunchViewController.h; sourceTree = "<group>"; };
+		ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTLaunchViewController.m; sourceTree = "<group>"; };
 		ACCC835C1E9BB3BF00C94231 /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		ACCC835E1E9BB3BF00C94231 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA4151B1E98CFA600B03AEC /* APP */,
+				ACA5401A1E9F70A700115BA7 /* Modules */,
 				ACA4151C1E98CFA600B03AEC /* Base */,
 				ACA4153B1E98D34600B03AEC /* Tab */,
 				ACEB147E1E98EE0500C50160 /* Public */,
@@ -687,6 +691,17 @@
 			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
+		ACA5401A1E9F70A700115BA7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5401B1E9F70D200115BA7 /* VTGuidePageViewController.h */,
+				ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */,
+				ACA5401E1E9F711C00115BA7 /* VTLaunchViewController.h */,
+				ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		ACEB147E1E98EE0500C50160 /* Public */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,8 +732,6 @@
 				AC0FBC801E99DA7F003B15F0 /* LoopScrollView.m */,
 				ACEB14961E99236B00C50160 /* VTFilterView.h */,
 				ACEB14971E99236B00C50160 /* VTFilterView.m */,
-				AC0FB68D1E9A714800A662F7 /* VTCityTopMenu.h */,
-				AC0FB68E1E9A714800A662F7 /* VTCityTopMenu.m */,
 				ACF705331E9DFE5900922B95 /* VTCityNavMenuView.h */,
 				ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */,
 			);
@@ -834,6 +847,7 @@
 				TargetAttributes = {
 					ACA414F21E98CB0A00B03AEC = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BEGVJEYR5W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -949,7 +963,6 @@
 				ACA416CB1E98D65400B03AEC /* SDWebImageDecoder.m in Sources */,
 				ACA4154E1E98D3F100B03AEC /* VTPersonalViewController.m in Sources */,
 				ACF7054C1E9E067400922B95 /* VTCityViewController.m in Sources */,
-				AC0FB68F1E9A714800A662F7 /* VTCityTopMenu.m in Sources */,
 				ACF7054E1E9E067400922B95 /* VTFairTableViewCell.m in Sources */,
 				ACA416C81E98D65400B03AEC /* NSData+ImageContentType.m in Sources */,
 				ACA416A61E98D65400B03AEC /* MJTypeEncoding.m in Sources */,
@@ -966,10 +979,12 @@
 				ACA4164A1E98D65400B03AEC /* View+MASAdditions.m in Sources */,
 				ACA416CE1E98D65400B03AEC /* SDWebImageManager.m in Sources */,
 				ACA416CF1E98D65400B03AEC /* SDWebImagePrefetcher.m in Sources */,
+				ACA540201E9F711C00115BA7 /* VTLaunchViewController.m in Sources */,
 				ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */,
 				ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */,
 				ACA416D01E98D65400B03AEC /* UIButton+WebCache.m in Sources */,
 				ACA416A51E98D65400B03AEC /* MJType.m in Sources */,
+				ACA5401D1E9F70D200115BA7 /* VTGuidePageViewController.m in Sources */,
 				ACA416491E98D65400B03AEC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				ACF705501E9E067400922B95 /* VTSpaceTableViewCell.m in Sources */,
 				ACA416D51E98D65400B03AEC /* UIImageView+WebCache.m in Sources */,
@@ -1115,7 +1130,8 @@
 			baseConfigurationReference = 6B4FE5AA030A45A714D27B0F /* Pods-VART项目重构.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BEGVJEYR5W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1140,7 +1156,8 @@
 			baseConfigurationReference = EF615DB4BE774F2B8185F551 /* Pods-VART项目重构.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BEGVJEYR5W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

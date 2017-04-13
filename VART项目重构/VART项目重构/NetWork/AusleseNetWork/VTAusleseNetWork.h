@@ -9,5 +9,9 @@
 #import "VTNetWorkManager.h"
 
 @interface VTAusleseNetWork : VTNetWorkManager
++(instancetype)manager;
+
+/**获取精选首页推荐数据*/
+-(NSURLSessionDataTask *)getAusleseDataWith:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(id respons))success faile:(void (^)(NSURLSessionDataTask * task,NSError * error))faile;
 
 @end

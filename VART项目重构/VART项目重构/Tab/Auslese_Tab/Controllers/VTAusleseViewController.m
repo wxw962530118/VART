@@ -29,6 +29,13 @@
     VTAusleseHeaderView * headerView  = [VTAusleseHeaderView createHeaderViewWithImageUrlArray:self.originalImageUrls];
     headerView.frame = CGRectMake(0,64, ScreenWidth,175);
     [self.view addSubview:headerView];
+    
+    NSString * requestURL = [NSString stringWithFormat:@"%@%@", VTInterFaceNet, @"/api/activities/recommend_services.json"];
+    [[VTAusleseNetWork manager]getAusleseDataWith:requestURL parameters:nil success:^(id response) {
+        NSLog(@"respons--%@",response);
+    } faile:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 

@@ -9,22 +9,14 @@
 #import "VTFilterView.h"
 #define  BaseTag  1000
 @interface VTFilterView ()
-
 @property (nonatomic, strong) NSArray * titleArray;
-
-
-
 @property (nonatomic, assign) NSInteger nowClickIndex;
-
 /**标签栏底部的指示器view*/
 @property (nonatomic,strong) UIView   * indicatorView;
 /**当前选中的按钮*/
 @property (nonatomic,strong) UIButton * selectButton;
-
 @property (nonatomic, copy) TitleBtnCallBack  callBack;
-
 @end
-
 
 @implementation VTFilterView
 
@@ -104,4 +96,5 @@
     }
     return self;
 }
+
 @end

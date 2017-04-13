@@ -44,13 +44,7 @@
             NSError * error = [NSError errorWithDomain:kPrivateErrorDomain code:1 userInfo:@{kPrivateErrorMessage:@"JSON解析失败"}];
             failure(task,error);
         }else{
-            if (![response[@"isError"] isEqual:@0]) {
-                ErrorLog(@"网络请求成功服务器返回错误 信息:%@",response[@"message"]);
-                NSError *error = [NSError errorWithDomain:kPrivateErrorDomain code:[response[@"isError"] integerValue] userInfo:@{kPrivateErrorMessage:response[@"message"]}];
-                failure(task,error);
-            }else{
-                success(response);
-            }
+            success(response);
         }
         success(response);
         

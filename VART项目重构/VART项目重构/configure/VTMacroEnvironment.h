@@ -39,7 +39,7 @@
 //#define VTInterFaceNet   @"http://api-test.vart.cc/4/"
 
 //测试接口
-#define VTInterFaceNet    @"http://api.vart.cc/4/"
+#define VTInterFaceNet    @"http://itstest.letscharge.cn"
 
 /* ----------------------------------------- */
 

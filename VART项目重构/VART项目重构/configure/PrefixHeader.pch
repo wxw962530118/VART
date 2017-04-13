@@ -15,6 +15,7 @@
        #import "AFNetworking.h"
        #import "VTBaseModel.h"
        #import "MJExtension.h"
+       #import "VTAusleseNetWork.h"
        #import "VTNetWorkManager.h"
        #import "ToolBaseClass.h"
        #import "VTMacroColors.h"
