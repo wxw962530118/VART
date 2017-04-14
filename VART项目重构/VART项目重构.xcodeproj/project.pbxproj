@@ -14,8 +14,9 @@
 		AC235D5F1E9A116F00500534 /* AIELoopViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */; };
 		AC359E1B1EA0B14B003A5F65 /* VTWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359E1A1EA0B14B003A5F65 /* VTWaterfallLayout.m */; };
 		AC359E1E1EA0B291003A5F65 /* VTExhibitionDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */; };
+		AC359EE41EA0D2AD003A5F65 /* VTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */; };
+		AC359EE61EA0FE18003A5F65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC359EE51EA0FE18003A5F65 /* LaunchScreen.xib */; };
 		ACA414F81E98CB0A00B03AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA414F71E98CB0A00B03AEC /* main.m */; };
-		ACA415061E98CB0A00B03AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */; };
 		ACA415161E98CE7B00B03AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA415151E98CE7B00B03AEC /* Assets.xcassets */; };
 		ACA415251E98CFFF00B03AEC /* VTRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415241E98CFFF00B03AEC /* VTRootTabBarController.m */; };
 		ACA415281E98D03500B03AEC /* VTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415271E98D03500B03AEC /* VTRootNavigationController.m */; };
@@ -116,10 +117,12 @@
 		AC359E1A1EA0B14B003A5F65 /* VTWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTWaterfallLayout.m; sourceTree = "<group>"; };
 		AC359E1C1EA0B291003A5F65 /* VTExhibitionDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTExhibitionDetailsController.h; sourceTree = "<group>"; };
 		AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTExhibitionDetailsController.m; sourceTree = "<group>"; };
+		AC359EE21EA0D2AD003A5F65 /* VTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTSearchBar.h; sourceTree = "<group>"; };
+		AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSearchBar.m; sourceTree = "<group>"; };
+		AC359EE51EA0FE18003A5F65 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMacroEnvironment.h; sourceTree = "<group>"; };
 		ACA414F31E98CB0A00B03AEC /* VART项目重构.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VART项目重构.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA414F71E98CB0A00B03AEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ACA415051E98CB0A00B03AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA415071E98CB0A00B03AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA415151E98CE7B00B03AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA415231E98CFFF00B03AEC /* VTRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTRootTabBarController.h; sourceTree = "<group>"; };
@@ -415,10 +418,10 @@
 		ACA414F61E98CB0A00B03AEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */,
 				ACA415071E98CB0A00B03AEC /* Info.plist */,
 				ACA415151E98CE7B00B03AEC /* Assets.xcassets */,
 				ACA414F71E98CB0A00B03AEC /* main.m */,
+				AC359EE51EA0FE18003A5F65 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -754,6 +757,8 @@
 				ACEB14971E99236B00C50160 /* VTFilterView.m */,
 				ACF705331E9DFE5900922B95 /* VTCityNavMenuView.h */,
 				ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */,
+				AC359EE21EA0D2AD003A5F65 /* VTSearchBar.h */,
+				AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -914,9 +919,9 @@
 				ACA415161E98CE7B00B03AEC /* Assets.xcassets in Resources */,
 				ACF7054F1E9E067400922B95 /* VTFairTableViewCell.xib in Resources */,
 				ACA4153A1E98D24D00B03AEC /* Personal.xcassets in Resources */,
+				AC359EE61EA0FE18003A5F65 /* LaunchScreen.xib in Resources */,
 				ACA415341E98D21100B03AEC /* Auslese.xcassets in Resources */,
 				ACEB148C1E991D2700C50160 /* Other.xcassets in Resources */,
-				ACA415061E98CB0A00B03AEC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -988,6 +993,7 @@
 				ACA416A01E98D65400B03AEC /* MJConst.m in Sources */,
 				ACEB14951E991DC200C50160 /* VTAusleseHeaderView.m in Sources */,
 				ACA416A91E98D65400B03AEC /* NSObject+MJMember.m in Sources */,
+				AC359EE41EA0D2AD003A5F65 /* VTSearchBar.m in Sources */,
 				ACEB14921E991D9000C50160 /* VTAusleseViewController.m in Sources */,
 				ACA416CB1E98D65400B03AEC /* SDWebImageDecoder.m in Sources */,
 				ACA4154E1E98D3F100B03AEC /* VTPersonalViewController.m in Sources */,
@@ -1058,17 +1064,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACA415051E98CB0A00B03AEC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACA415081E98CB0A00B03AEC /* Debug */ = {

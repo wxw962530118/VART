@@ -12,8 +12,8 @@
 #import "VTAusleseModel.h"
 #import "VTAusleseImageModel.h"
 #import "VTExhibitionDetailsController.h"
+#import "VTSearchBar.h"
 @interface VTAusleseViewController ()<UITableViewDelegate,UITableViewDataSource>
-
 @property (nonatomic, strong) UITableView * ausleseTableView;
 
 @property (nonatomic, strong) NSMutableArray <NSURL *> * originalImageUrls;
@@ -23,16 +23,66 @@
 @property (nonatomic, strong) NSMutableArray <VTAusleseModel *> * dataArray;
 
 @property (nonatomic, strong) NSArray * dateArray;
+/**自定义导航栏*/
+@property (nonatomic, strong) UIView * navBarView;
+/**搜索框*/
+@property (nonatomic, strong) VTSearchBar * searchBar;
+/**扫码按钮*/
+@property (nonatomic, strong) UIButton * navQrButton;
 
 @end
 
 @implementation VTAusleseViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createNavTitleView];
     [self prepareLoopData];
     [self prepareDataSource];
     [self createTableView];
+}
+
+-(void)createNavTitleView{
+    self.navBarView = [[UIView alloc]init];
+    self.navBarView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.navBarView];
+    [self.navBarView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.top.equalTo(self.view.mas_top);
+        make.height.mas_equalTo(64);
+    }];
+    
+    // 创建搜索框对象
+    self.searchBar = [VTSearchBar searchBar];
+    [self.navBarView addSubview:self.searchBar];
+    [self.searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.navBarView.mas_left).offset(10);
+        make.top.equalTo(self.navBarView.mas_top).offset(25);
+        make.right.equalTo(self.navBarView.mas_right).offset(-54);
+        make.height.mas_equalTo(30);
+    }];
+    
+    //创建导航栏右侧的扫码按钮
+    self.navQrButton = [[UIButton alloc] init];
+    [self.navQrButton setImage:[UIImage imageNamed:@"ScanningWhite"] forState:UIControlStateNormal];
+    [self.navQrButton addTarget:self action:@selector(pushToQrVc) forControlEvents:UIControlEventTouchUpInside];
+    [self.navBarView addSubview:self.navQrButton];
+    [self.navQrButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.navBarView.mas_right).offset(-15);
+        make.width.height.mas_equalTo(22);
+        make.centerY.equalTo(self.searchBar.mas_centerY);
+    }];
 }
 
 -(void)prepareLoopData{
@@ -46,13 +96,14 @@
 }
 
 -(void)prepareDataSource{
-    /**假数据*/
+    /**首页假数据*/
     self.dateArray = @[@"今日推荐",@"2017.04.13 星期五",@"2017.04.12 星期四",@"2017.04.11 星期三",@"2017.04.10 星期二"];
     self.dataArray = [NSMutableArray array];
     NSArray * typeArr = @[@(0),@(0),@(1),@(0),@(1)];
     NSArray * tagsArr = @[@"阅读",@"展览",@"作品",@"展览",@"作品"];
     NSArray * titleArr = @[@"这是阅读啊",@"这是展览啊",@"这是作品啊",@"这是展览啊",@"这是作品啊"];
-    NSArray * contentArr = @[@"阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦",@"展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦",@"作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品",@"展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦",@""]; 
+    NSArray * contentArr = @[@"阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦阅读阅读阅读阅读啦",@"展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦",@"作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品作品",@"展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦展览啦",@""];
+
     NSMutableDictionary * mulDict = [NSMutableDictionary dictionary];
     for (int i = 0; i< tagsArr.count; i++) {
         [mulDict setValue:tagsArr[i] forKey:@"tags"];
@@ -76,8 +127,7 @@
 }
 
 -(void)createTableView{
-    self.ausleseTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
-    self.ausleseTableView.showsVerticalScrollIndicator = NO;
+    self.ausleseTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,64, ScreenWidth, ScreenHeight - 113) style:UITableViewStyleGrouped];
     self.ausleseTableView.delegate = self;
     self.ausleseTableView.dataSource = self;
     self.ausleseTableView.backgroundColor = [UIColor whiteColor];
@@ -102,6 +152,8 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.view endEditing:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     VTExhibitionDetailsController * detailVC = [[VTExhibitionDetailsController alloc]init];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
@@ -120,7 +172,7 @@
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView * headerView = [[UIView alloc]init];
-    headerView.backgroundColor = [UIColor redColor];
+    headerView.backgroundColor = [UIColor lightGrayColor];
     UILabel * titleLabel = [[UILabel alloc]init];
     titleLabel.text = self.dateArray[section];
     titleLabel.textColor = [UIColor blackColor];
@@ -132,6 +184,19 @@
         make.centerY.equalTo(headerView.mas_centerY);
     }];
     return headerView;
+}
+
+#pragma mark --- 进入扫码页面
+-(void)pushToQrVc{
+
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+     [self.view endEditing:YES];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
 
 @end
