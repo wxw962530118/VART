@@ -12,10 +12,8 @@
 @interface VTAusleseHeaderView ()
 /**轮播图*/
 @property (nonatomic, strong) LoopScrollView * loopView;
-
 /**图片URL数组*/
 @property (nonatomic, strong) NSArray <NSURL *> * imageUrlArray;
-
 //广告轮播view
 @property (nonatomic, strong)  AIELoopView   * adView;
 
@@ -37,22 +35,13 @@
 }
 
 -(instancetype )initWithImageUrlArray:(NSArray *)array{
-    self = [self init];
+    self = [super init];
     if (self) {
         //初始化子控件
         self.imageUrlArray = array;
     }
     return self;
 }
-
--(instancetype )init{
-    self = [super init];
-    if (self) {
-       
-    }
-    return self;
-}
-
 
 -(AIELoopView *)adView{
     if (_adView == nil) {

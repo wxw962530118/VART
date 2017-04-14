@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F58886B7808E248194F42C6323479C4BB956198D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "90E492C43E0E1D6898B3B90213555060029FCA9F" : 9223372036854775807,
+    "F58886B7808E248194F42C6323479C4BB956198D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F31B31F4-5617-4F6B-A30E-041AA6E77362",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "90E492C43E0E1D6898B3B90213555060029FCA9F" : "Desktop\/Star_Coach\/starcoach_ios\/",
+    "F58886B7808E248194F42C6323479C4BB956198D" : "VART\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VART项目重构",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VART项目重构\/VART项目重构.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:itianchuangcc\/starcoach_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90E492C43E0E1D6898B3B90213555060029FCA9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wxw962530118\/VART.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F58886B7808E248194F42C6323479C4BB956198D"
+    }
+  ]
+}

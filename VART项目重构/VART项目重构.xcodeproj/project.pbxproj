@@ -12,7 +12,8 @@
 		AC235D5D1E9A116F00500534 /* AIELoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D581E9A116F00500534 /* AIELoopView.m */; };
 		AC235D5E1E9A116F00500534 /* AIELoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */; };
 		AC235D5F1E9A116F00500534 /* AIELoopViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */; };
-		AC8D1FFA1E9E542C0031FAC7 /* VTPopAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D1FF91E9E542C0031FAC7 /* VTPopAnimate.m */; };
+		AC359E1B1EA0B14B003A5F65 /* VTWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359E1A1EA0B14B003A5F65 /* VTWaterfallLayout.m */; };
+		AC359E1E1EA0B291003A5F65 /* VTExhibitionDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */; };
 		ACA414F81E98CB0A00B03AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA414F71E98CB0A00B03AEC /* main.m */; };
 		ACA415061E98CB0A00B03AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA415041E98CB0A00B03AEC /* LaunchScreen.storyboard */; };
 		ACA415161E98CE7B00B03AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA415151E98CE7B00B03AEC /* Assets.xcassets */; };
@@ -75,6 +76,12 @@
 		ACA540191E9F4BD900115BA7 /* VTPersonalNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540181E9F4BD900115BA7 /* VTPersonalNetWork.m */; };
 		ACA5401D1E9F70D200115BA7 /* VTGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */; };
 		ACA540201E9F711C00115BA7 /* VTLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */; };
+		ACA540231E9F9F3100115BA7 /* VTAusleseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540221E9F9F3100115BA7 /* VTAusleseCell.m */; };
+		ACA540261E9FA2D900115BA7 /* VTAusleseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540251E9FA2D900115BA7 /* VTAusleseModel.m */; };
+		ACA540291E9FA95300115BA7 /* VTAusleseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540281E9FA95300115BA7 /* VTAusleseCollectionView.m */; };
+		ACA5402C1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5402B1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.m */; };
+		ACA5402F1E9FAD6900115BA7 /* VTAusleseCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5402E1E9FAD6900115BA7 /* VTAusleseCollectionModel.m */; };
+		ACA540321E9FB55B00115BA7 /* VTAusleseImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA540311E9FB55B00115BA7 /* VTAusleseImageModel.m */; };
 		ACCC83601E9BB3BF00C94231 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */; };
 		ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC835F1E9BB3BF00C94231 /* UIView+Extension.m */; };
 		ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB147B1E98E99600C50160 /* ToolBaseClass.m */; };
@@ -86,7 +93,6 @@
 		ACF705351E9DFE5900922B95 /* VTCityNavMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */; };
 		ACF7054B1E9E067400922B95 /* VTCityTopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */; };
 		ACF7054C1E9E067400922B95 /* VTCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705401E9E067400922B95 /* VTCityViewController.m */; };
-		ACF7054D1E9E067400922B95 /* VTPopPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705421E9E067400922B95 /* VTPopPresentationController.m */; };
 		ACF7054E1E9E067400922B95 /* VTFairTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705461E9E067400922B95 /* VTFairTableViewCell.m */; };
 		ACF7054F1E9E067400922B95 /* VTFairTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF705471E9E067400922B95 /* VTFairTableViewCell.xib */; };
 		ACF705501E9E067400922B95 /* VTSpaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705491E9E067400922B95 /* VTSpaceTableViewCell.m */; };
@@ -106,9 +112,11 @@
 		AC235D5A1E9A116F00500534 /* AIELoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIELoopViewCell.m; sourceTree = "<group>"; };
 		AC235D5B1E9A116F00500534 /* AIELoopViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIELoopViewLayout.h; sourceTree = "<group>"; };
 		AC235D5C1E9A116F00500534 /* AIELoopViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIELoopViewLayout.m; sourceTree = "<group>"; };
+		AC359E191EA0B14B003A5F65 /* VTWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTWaterfallLayout.h; sourceTree = "<group>"; };
+		AC359E1A1EA0B14B003A5F65 /* VTWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTWaterfallLayout.m; sourceTree = "<group>"; };
+		AC359E1C1EA0B291003A5F65 /* VTExhibitionDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTExhibitionDetailsController.h; sourceTree = "<group>"; };
+		AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTExhibitionDetailsController.m; sourceTree = "<group>"; };
 		AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMacroEnvironment.h; sourceTree = "<group>"; };
-		AC8D1FF81E9E542C0031FAC7 /* VTPopAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPopAnimate.h; sourceTree = "<group>"; };
-		AC8D1FF91E9E542C0031FAC7 /* VTPopAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPopAnimate.m; sourceTree = "<group>"; };
 		ACA414F31E98CB0A00B03AEC /* VART项目重构.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VART项目重构.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA414F71E98CB0A00B03AEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACA415051E98CB0A00B03AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -237,6 +245,18 @@
 		ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTGuidePageViewController.m; sourceTree = "<group>"; };
 		ACA5401E1E9F711C00115BA7 /* VTLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTLaunchViewController.h; sourceTree = "<group>"; };
 		ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTLaunchViewController.m; sourceTree = "<group>"; };
+		ACA540211E9F9F3100115BA7 /* VTAusleseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseCell.h; sourceTree = "<group>"; };
+		ACA540221E9F9F3100115BA7 /* VTAusleseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseCell.m; sourceTree = "<group>"; };
+		ACA540241E9FA2D900115BA7 /* VTAusleseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseModel.h; sourceTree = "<group>"; };
+		ACA540251E9FA2D900115BA7 /* VTAusleseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseModel.m; sourceTree = "<group>"; };
+		ACA540271E9FA95300115BA7 /* VTAusleseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseCollectionView.h; sourceTree = "<group>"; };
+		ACA540281E9FA95300115BA7 /* VTAusleseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseCollectionView.m; sourceTree = "<group>"; };
+		ACA5402A1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseCollectionViewCell.h; sourceTree = "<group>"; };
+		ACA5402B1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseCollectionViewCell.m; sourceTree = "<group>"; };
+		ACA5402D1E9FAD6900115BA7 /* VTAusleseCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseCollectionModel.h; sourceTree = "<group>"; };
+		ACA5402E1E9FAD6900115BA7 /* VTAusleseCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseCollectionModel.m; sourceTree = "<group>"; };
+		ACA540301E9FB55B00115BA7 /* VTAusleseImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTAusleseImageModel.h; sourceTree = "<group>"; };
+		ACA540311E9FB55B00115BA7 /* VTAusleseImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseImageModel.m; sourceTree = "<group>"; };
 		ACCC835C1E9BB3BF00C94231 /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		ACCC835D1E9BB3BF00C94231 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		ACCC835E1E9BB3BF00C94231 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -263,8 +283,6 @@
 		ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityTopMenuController.m; sourceTree = "<group>"; };
 		ACF7053F1E9E067400922B95 /* VTCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityViewController.h; sourceTree = "<group>"; };
 		ACF705401E9E067400922B95 /* VTCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityViewController.m; sourceTree = "<group>"; };
-		ACF705411E9E067400922B95 /* VTPopPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPopPresentationController.h; sourceTree = "<group>"; };
-		ACF705421E9E067400922B95 /* VTPopPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPopPresentationController.m; sourceTree = "<group>"; };
 		ACF705451E9E067400922B95 /* VTFairTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFairTableViewCell.h; sourceTree = "<group>"; };
 		ACF705461E9E067400922B95 /* VTFairTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFairTableViewCell.m; sourceTree = "<group>"; };
 		ACF705471E9E067400922B95 /* VTFairTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTFairTableViewCell.xib; sourceTree = "<group>"; };
@@ -698,6 +716,8 @@
 				ACA5401C1E9F70D200115BA7 /* VTGuidePageViewController.m */,
 				ACA5401E1E9F711C00115BA7 /* VTLaunchViewController.h */,
 				ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */,
+				AC359E1C1EA0B291003A5F65 /* VTExhibitionDetailsController.h */,
+				AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -750,6 +770,12 @@
 		ACEB14901E991D9000C50160 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACA540241E9FA2D900115BA7 /* VTAusleseModel.h */,
+				ACA540251E9FA2D900115BA7 /* VTAusleseModel.m */,
+				ACA5402D1E9FAD6900115BA7 /* VTAusleseCollectionModel.h */,
+				ACA5402E1E9FAD6900115BA7 /* VTAusleseCollectionModel.m */,
+				ACA540301E9FB55B00115BA7 /* VTAusleseImageModel.h */,
+				ACA540311E9FB55B00115BA7 /* VTAusleseImageModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -759,6 +785,14 @@
 			children = (
 				ACEB14931E991DC200C50160 /* VTAusleseHeaderView.h */,
 				ACEB14941E991DC200C50160 /* VTAusleseHeaderView.m */,
+				ACA540211E9F9F3100115BA7 /* VTAusleseCell.h */,
+				ACA540221E9F9F3100115BA7 /* VTAusleseCell.m */,
+				ACA540271E9FA95300115BA7 /* VTAusleseCollectionView.h */,
+				ACA540281E9FA95300115BA7 /* VTAusleseCollectionView.m */,
+				AC359E191EA0B14B003A5F65 /* VTWaterfallLayout.h */,
+				AC359E1A1EA0B14B003A5F65 /* VTWaterfallLayout.m */,
+				ACA5402A1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.h */,
+				ACA5402B1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -770,10 +804,6 @@
 				ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */,
 				ACF7053F1E9E067400922B95 /* VTCityViewController.h */,
 				ACF705401E9E067400922B95 /* VTCityViewController.m */,
-				ACF705411E9E067400922B95 /* VTPopPresentationController.h */,
-				ACF705421E9E067400922B95 /* VTPopPresentationController.m */,
-				AC8D1FF81E9E542C0031FAC7 /* VTPopAnimate.h */,
-				AC8D1FF91E9E542C0031FAC7 /* VTPopAnimate.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -946,7 +976,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC235D5F1E9A116F00500534 /* AIELoopViewLayout.m in Sources */,
-				AC8D1FFA1E9E542C0031FAC7 /* VTPopAnimate.m in Sources */,
 				ACA416A41E98D65400B03AEC /* MJMethod.m in Sources */,
 				ACA416CC1E98D65400B03AEC /* SDWebImageDownloader.m in Sources */,
 				ACA414F81E98CB0A00B03AEC /* main.m in Sources */,
@@ -971,10 +1000,12 @@
 				ACA416A21E98D65400B03AEC /* MJIvar.m in Sources */,
 				ACA416C71E98D65400B03AEC /* MKAnnotationView+WebCache.m in Sources */,
 				ACA415551E98D56200B03AEC /* VTRootTabItemModel.m in Sources */,
+				ACA540231E9F9F3100115BA7 /* VTAusleseCell.m in Sources */,
 				ACCC83601E9BB3BF00C94231 /* UINavigationController+Additions.m in Sources */,
 				AC235D5D1E9A116F00500534 /* AIELoopView.m in Sources */,
 				ACA416471E98D65400B03AEC /* MASViewConstraint.m in Sources */,
 				ACA415511E98D46200B03AEC /* AppDelegate.m in Sources */,
+				AC359E1E1EA0B291003A5F65 /* VTExhibitionDetailsController.m in Sources */,
 				ACA416D41E98D65400B03AEC /* UIImageView+HighlightedWebCache.m in Sources */,
 				ACA4164A1E98D65400B03AEC /* View+MASAdditions.m in Sources */,
 				ACA416CE1E98D65400B03AEC /* SDWebImageManager.m in Sources */,
@@ -983,6 +1014,8 @@
 				ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */,
 				ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */,
 				ACA416D01E98D65400B03AEC /* UIButton+WebCache.m in Sources */,
+				AC359E1B1EA0B14B003A5F65 /* VTWaterfallLayout.m in Sources */,
+				ACA540261E9FA2D900115BA7 /* VTAusleseModel.m in Sources */,
 				ACA416A51E98D65400B03AEC /* MJType.m in Sources */,
 				ACA5401D1E9F70D200115BA7 /* VTGuidePageViewController.m in Sources */,
 				ACA416491E98D65400B03AEC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -990,6 +1023,7 @@
 				ACA416D51E98D65400B03AEC /* UIImageView+WebCache.m in Sources */,
 				ACA416451E98D65400B03AEC /* MASLayoutConstraint.m in Sources */,
 				ACA416D31E98D65400B03AEC /* UIImage+WebP.m in Sources */,
+				ACA5402C1E9FAB5700115BA7 /* VTAusleseCollectionViewCell.m in Sources */,
 				ACA4164B1E98D65400B03AEC /* ViewController+MASAdditions.m in Sources */,
 				ACF705541E9E06BE00922B95 /* VTCityNavMenuContentCell.m in Sources */,
 				ACA416441E98D65400B03AEC /* MASConstraintMaker.m in Sources */,
@@ -998,10 +1032,12 @@
 				AC0FBC811E99DA7F003B15F0 /* LoopScrollView.m in Sources */,
 				ACA540101E9F4BA400115BA7 /* VTAusleseNetWork.m in Sources */,
 				ACEB14981E99236B00C50160 /* VTFilterView.m in Sources */,
+				ACA5402F1E9FAD6900115BA7 /* VTAusleseCollectionModel.m in Sources */,
 				ACA4152F1E98D09700B03AEC /* VTBaseModel.m in Sources */,
 				ACA416D61E98D65400B03AEC /* UIView+WebCacheOperation.m in Sources */,
 				ACF7054B1E9E067400922B95 /* VTCityTopMenuController.m in Sources */,
-				ACF7054D1E9E067400922B95 /* VTPopPresentationController.m in Sources */,
+				ACA540321E9FB55B00115BA7 /* VTAusleseImageModel.m in Sources */,
+				ACA540291E9FA95300115BA7 /* VTAusleseCollectionView.m in Sources */,
 				ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */,
 				ACA415251E98CFFF00B03AEC /* VTRootTabBarController.m in Sources */,
 				ACF705351E9DFE5900922B95 /* VTCityNavMenuView.m in Sources */,

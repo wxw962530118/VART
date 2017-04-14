@@ -7,7 +7,6 @@
 //
 
 #import "AIELoopViewCell.h"
-#import "UIImageView+WebCache.h"
 
 @implementation AIELoopViewCell {
     UIImageView *_imageView;

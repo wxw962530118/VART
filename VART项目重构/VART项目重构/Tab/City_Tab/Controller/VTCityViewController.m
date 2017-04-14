@@ -11,7 +11,6 @@
 #import "VTFairTableViewCell.h"
 #import "VTSpaceTableViewCell.h"
 #import "VTCityTopMenuController.h"
-#import "VTPopAnimate.h"
 #import "VTCityNavMenuView.h"
 #import "VTCityNavMenuContentModel.h"
 @interface VTCityViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -53,7 +52,7 @@
     }
     self.titleBtn = [[UIButton alloc] initWithFrame:CGRectMake(0,0,80, 30)];
     [self.titleBtn setTitle:@"热门" forState:(UIControlStateNormal)];
-    [self.titleBtn setTitleColor:[UIColor grayColor] forState:(UIControlStateNormal)];
+    [self.titleBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [self.titleBtn addTarget:self action:@selector(titleBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
     self.navigationItem.titleView = self.titleBtn;
 }

@@ -19,6 +19,7 @@
        #import "VTNetWorkManager.h"
        #import "ToolBaseClass.h"
        #import "VTMacroColors.h"
+       #import "UIImageView+WebCache.h"
        #import "VTMacroMeasurement.h"
        #import "VTMacroEnvironment.h"
        #import "UIView+Extension.h"

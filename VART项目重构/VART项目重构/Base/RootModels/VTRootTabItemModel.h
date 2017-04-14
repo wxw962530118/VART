@@ -9,6 +9,7 @@
 #import "VTBaseModel.h"
 #import <UIKit/UIKit.h>
 @interface VTRootTabItemModel : VTBaseModel
+
 @property (nonatomic, copy) NSString * class_name;
 
 @property (nonatomic, copy) NSString * icon_normal;

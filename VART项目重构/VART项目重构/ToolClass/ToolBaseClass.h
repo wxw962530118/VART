@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface ToolBaseClass : NSObject
+/** *用颜色生成图片 */
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 
 @end
