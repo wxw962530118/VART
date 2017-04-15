@@ -16,6 +16,9 @@
 		AC359E1E1EA0B291003A5F65 /* VTExhibitionDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */; };
 		AC359EE41EA0D2AD003A5F65 /* VTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */; };
 		AC359EE61EA0FE18003A5F65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC359EE51EA0FE18003A5F65 /* LaunchScreen.xib */; };
+		AC9CA5721EA1E8CC004D2850 /* VTTopSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9CA5711EA1E8CC004D2850 /* VTTopSliderView.m */; };
+		AC9CA5751EA1EB4F004D2850 /* VTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9CA5741EA1EB4F004D2850 /* VTSearchViewController.m */; };
+		AC9CA5781EA1F6DD004D2850 /* VTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9CA5771EA1F6DD004D2850 /* VTBaseNavigationController.m */; };
 		ACA414F81E98CB0A00B03AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA414F71E98CB0A00B03AEC /* main.m */; };
 		ACA415161E98CE7B00B03AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA415151E98CE7B00B03AEC /* Assets.xcassets */; };
 		ACA415251E98CFFF00B03AEC /* VTRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA415241E98CFFF00B03AEC /* VTRootTabBarController.m */; };
@@ -92,7 +95,6 @@
 		ACEB14951E991DC200C50160 /* VTAusleseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB14941E991DC200C50160 /* VTAusleseHeaderView.m */; };
 		ACEB14981E99236B00C50160 /* VTFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB14971E99236B00C50160 /* VTFilterView.m */; };
 		ACF705351E9DFE5900922B95 /* VTCityNavMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */; };
-		ACF7054B1E9E067400922B95 /* VTCityTopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */; };
 		ACF7054C1E9E067400922B95 /* VTCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705401E9E067400922B95 /* VTCityViewController.m */; };
 		ACF7054E1E9E067400922B95 /* VTFairTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705461E9E067400922B95 /* VTFairTableViewCell.m */; };
 		ACF7054F1E9E067400922B95 /* VTFairTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF705471E9E067400922B95 /* VTFairTableViewCell.xib */; };
@@ -121,6 +123,12 @@
 		AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSearchBar.m; sourceTree = "<group>"; };
 		AC359EE51EA0FE18003A5F65 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		AC57DE751E9CE76300C13A05 /* VTMacroEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMacroEnvironment.h; sourceTree = "<group>"; };
+		AC9CA5701EA1E8CC004D2850 /* VTTopSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTopSliderView.h; sourceTree = "<group>"; };
+		AC9CA5711EA1E8CC004D2850 /* VTTopSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTopSliderView.m; sourceTree = "<group>"; };
+		AC9CA5731EA1EB4F004D2850 /* VTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTSearchViewController.h; sourceTree = "<group>"; };
+		AC9CA5741EA1EB4F004D2850 /* VTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSearchViewController.m; sourceTree = "<group>"; };
+		AC9CA5761EA1F6DD004D2850 /* VTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseNavigationController.h; sourceTree = "<group>"; };
+		AC9CA5771EA1F6DD004D2850 /* VTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseNavigationController.m; sourceTree = "<group>"; };
 		ACA414F31E98CB0A00B03AEC /* VART项目重构.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VART项目重构.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA414F71E98CB0A00B03AEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACA415071E98CB0A00B03AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,8 +290,6 @@
 		ACEB14971E99236B00C50160 /* VTFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFilterView.m; sourceTree = "<group>"; };
 		ACF705331E9DFE5900922B95 /* VTCityNavMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityNavMenuView.h; sourceTree = "<group>"; };
 		ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityNavMenuView.m; sourceTree = "<group>"; };
-		ACF7053D1E9E067400922B95 /* VTCityTopMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityTopMenuController.h; sourceTree = "<group>"; };
-		ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityTopMenuController.m; sourceTree = "<group>"; };
 		ACF7053F1E9E067400922B95 /* VTCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityViewController.h; sourceTree = "<group>"; };
 		ACF705401E9E067400922B95 /* VTCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityViewController.m; sourceTree = "<group>"; };
 		ACF705451E9E067400922B95 /* VTFairTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFairTableViewCell.h; sourceTree = "<group>"; };
@@ -504,6 +510,8 @@
 				ACA415241E98CFFF00B03AEC /* VTRootTabBarController.m */,
 				ACA415261E98D03500B03AEC /* VTRootNavigationController.h */,
 				ACA415271E98D03500B03AEC /* VTRootNavigationController.m */,
+				AC9CA5761EA1F6DD004D2850 /* VTBaseNavigationController.h */,
+				AC9CA5771EA1F6DD004D2850 /* VTBaseNavigationController.m */,
 				ACA415291E98D05A00B03AEC /* VTBaseViewController.h */,
 				ACA4152A1E98D05A00B03AEC /* VTBaseViewController.m */,
 			);
@@ -721,6 +729,8 @@
 				ACA5401F1E9F711C00115BA7 /* VTLaunchViewController.m */,
 				AC359E1C1EA0B291003A5F65 /* VTExhibitionDetailsController.h */,
 				AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */,
+				AC9CA5731EA1EB4F004D2850 /* VTSearchViewController.h */,
+				AC9CA5741EA1EB4F004D2850 /* VTSearchViewController.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -759,6 +769,8 @@
 				ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */,
 				AC359EE21EA0D2AD003A5F65 /* VTSearchBar.h */,
 				AC359EE31EA0D2AD003A5F65 /* VTSearchBar.m */,
+				AC9CA5701EA1E8CC004D2850 /* VTTopSliderView.h */,
+				AC9CA5711EA1E8CC004D2850 /* VTTopSliderView.m */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -805,8 +817,6 @@
 		ACF7053C1E9E067400922B95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7053D1E9E067400922B95 /* VTCityTopMenuController.h */,
-				ACF7053E1E9E067400922B95 /* VTCityTopMenuController.m */,
 				ACF7053F1E9E067400922B95 /* VTCityViewController.h */,
 				ACF705401E9E067400922B95 /* VTCityViewController.m */,
 			);
@@ -1038,20 +1048,22 @@
 				AC0FBC811E99DA7F003B15F0 /* LoopScrollView.m in Sources */,
 				ACA540101E9F4BA400115BA7 /* VTAusleseNetWork.m in Sources */,
 				ACEB14981E99236B00C50160 /* VTFilterView.m in Sources */,
+				AC9CA5781EA1F6DD004D2850 /* VTBaseNavigationController.m in Sources */,
 				ACA5402F1E9FAD6900115BA7 /* VTAusleseCollectionModel.m in Sources */,
 				ACA4152F1E98D09700B03AEC /* VTBaseModel.m in Sources */,
 				ACA416D61E98D65400B03AEC /* UIView+WebCacheOperation.m in Sources */,
-				ACF7054B1E9E067400922B95 /* VTCityTopMenuController.m in Sources */,
 				ACA540321E9FB55B00115BA7 /* VTAusleseImageModel.m in Sources */,
 				ACA540291E9FA95300115BA7 /* VTAusleseCollectionView.m in Sources */,
 				ACCC83611E9BB3BF00C94231 /* UIView+Extension.m in Sources */,
 				ACA415251E98CFFF00B03AEC /* VTRootTabBarController.m in Sources */,
 				ACF705351E9DFE5900922B95 /* VTCityNavMenuView.m in Sources */,
+				AC9CA5751EA1EB4F004D2850 /* VTSearchViewController.m in Sources */,
 				ACA415281E98D03500B03AEC /* VTRootNavigationController.m in Sources */,
 				ACA416481E98D65400B03AEC /* NSArray+MASAdditions.m in Sources */,
 				ACA416A71E98D65400B03AEC /* NSObject+MJCoding.m in Sources */,
 				ACA540191E9F4BD900115BA7 /* VTPersonalNetWork.m in Sources */,
 				ACA416CA1E98D65400B03AEC /* SDWebImageCompat.m in Sources */,
+				AC9CA5721EA1E8CC004D2850 /* VTTopSliderView.m in Sources */,
 				ACA416C91E98D65400B03AEC /* SDImageCache.m in Sources */,
 				ACA5400D1E9F4B1F00115BA7 /* VTNetWorkManager.m in Sources */,
 				ACA416CD1E98D65400B03AEC /* SDWebImageDownloaderOperation.m in Sources */,

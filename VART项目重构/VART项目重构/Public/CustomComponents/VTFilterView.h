@@ -10,7 +10,7 @@
 typedef void (^TitleBtnCallBack)(NSInteger didSelectIndex);
 
 @interface VTFilterView : UIView
-@property (nonatomic, strong) UIButton * titleButton;
+
 +(instancetype )createHeaderViewWithTitleArray:(NSArray *)titleArray callBack:(TitleBtnCallBack )callBack;
 
 @end

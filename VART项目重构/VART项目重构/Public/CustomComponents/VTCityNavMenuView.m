@@ -90,7 +90,7 @@
 
 -(UIImageView *)imageView{
     if (_imageView == nil) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,56,120,0)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,56,130,0)];
         UIImage * image = [UIImage imageNamed:@"top_dialog_bg"];
         // 左端盖宽度
         NSInteger leftCapWidth = image.size.width * 0.5f;
@@ -107,7 +107,7 @@
 }
 
 -(void)showTopMenuView{
-    self.imageView.height = 200;
+    self.imageView.height = 300;
     self.bgWindow.alpha = 1;
     self.imageView.transform = CGAffineTransformMakeScale(0.1f, 0.1f);
     [UIView animateWithDuration:.5f animations:^{

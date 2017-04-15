@@ -10,6 +10,7 @@
 #import "VTRootTabItemModel.h"
 #import "MJExtension.h"
 #import "VTRootNavigationController.h"
+#import "VTBaseNavigationController.h"
 /** TabBar根控制器目录 */
 #define TabControllerCatalog @"TabCatalog"
 
@@ -36,12 +37,6 @@
     return self;
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self foundTabBarControllers];
-}
-
 /** 从本地获取Tabbar根控制器目录 */
 - (NSArray<VTRootTabItemModel *> *)fetchTabCatalogFromBundle{
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:TabControllerCatalog ofType:@"plist"];
@@ -62,7 +57,7 @@
         UIViewController *tabController = [[[NSClassFromString(tabModel.class_name) class] alloc] init];
         tabController.title = tabModel.title;
         tabController.tabBarItem = [[UITabBarItem alloc] initWithTitle:tabModel.title image:tabModel.rIcon_normal selectedImage:tabModel.rIcon_selected];
-        [arrayTabControllers addObject:[[VTRootNavigationController alloc] initWithRootViewController:tabController]];
+        [arrayTabControllers addObject:[[VTBaseNavigationController alloc] initWithRootViewController:tabController]];
     }
     return arrayTabControllers;
 }

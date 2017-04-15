@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface VTRootNavigationController : UINavigationController
+#import "VTBaseNavigationController.h"
+@interface VTRootNavigationController : VTBaseNavigationController
 
 @end

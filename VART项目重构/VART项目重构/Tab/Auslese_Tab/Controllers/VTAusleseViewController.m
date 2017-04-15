@@ -13,6 +13,7 @@
 #import "VTAusleseImageModel.h"
 #import "VTExhibitionDetailsController.h"
 #import "VTSearchBar.h"
+#import "VTSearchViewController.h"
 @interface VTAusleseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView * ausleseTableView;
 
@@ -64,7 +65,12 @@
     }];
     
     // 创建搜索框对象
+    __weak typeof(self) weakSelf = self;
     self.searchBar = [VTSearchBar searchBar];
+    [self.searchBar setClickAction:^{
+         //点击输入框的回调
+        [weakSelf pushToSearchVc];
+    }];
     [self.navBarView addSubview:self.searchBar];
     [self.searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.navBarView.mas_left).offset(10);
@@ -184,6 +190,12 @@
         make.centerY.equalTo(headerView.mas_centerY);
     }];
     return headerView;
+}
+
+#pragma mark --- 进入搜索页面
+-(void)pushToSearchVc{
+    VTSearchViewController * vc = [[VTSearchViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark --- 进入扫码页面

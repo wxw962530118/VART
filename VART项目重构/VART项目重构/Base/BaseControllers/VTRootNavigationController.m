@@ -15,24 +15,30 @@
 @implementation VTRootNavigationController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    self.navigationBar.barTintColor = [UIColor orangeColor];
+    [super viewDidLoad];    
+}
+
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        self.navigationBarHidden = YES;
+        
+        // 注册通知 （一些基础的通知， 在这里注册）
+        [self registObserverForLoginController];
+    }
+    return self;
+}
+
+- (void)registObserverForLoginController{
+    /* 登录界面 弹出通知 */
+  //  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentLoginController:) name:TCNOTIFICATION_SHOULD_LOGIN object:nil];
+}
+
+- (void)presentLoginController:(NSNotification *)not{
     
+//    TCLoginViewController *login = [[TCLoginViewController alloc] init];
+//    login.fromFunction = (NSString *)not.object;
+//    [self presentViewController:[[BaseNavigationController alloc] initWithRootViewController:login] animated:YES completion:nil];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

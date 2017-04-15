@@ -64,9 +64,16 @@
     _clickAction = clickAction;
 }
 
+//-(void)textFieldDidBeginEditing:(UITextField *)textField{
+//    if (self.clickAction) {
+//        self.clickAction();
+//    }
+//}
+
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     
-    if (_style == VTSearchBarSelectionStyleClick && _clickAction) _clickAction();
+    if (_style == VTSearchBarSelectionStyleClick && _clickAction)
+        _clickAction();
     return _style == VTSearchBarSelectionStyleInput;
 }
 

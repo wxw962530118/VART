@@ -1,34 +1,33 @@
 //
-//  VTFilterView.m
+//  VTTopSliderView.m
 //  VART项目重构
 //
-//  Created by 王新伟 on 2017/4/8.
+//  Created by 王新伟 on 2017/4/15.
 //  Copyright © 2017年 王新伟. All rights reserved.
 //
 
-#import "VTFilterView.h"
+#import "VTTopSliderView.h"
 #define  BaseTag  1000
-@interface VTFilterView ()
 
+@interface VTTopSliderView ()
+
+/*外界传的标题数组*/
 @property (nonatomic, strong) NSArray * titleArray;
-
+/**当前选中的位置*/
 @property (nonatomic, assign) NSInteger nowClickIndex;
 /**标签栏底部的指示器view*/
 @property (nonatomic,strong) UIView   * indicatorView;
-
-@property (nonatomic, strong) UIButton * titleButton;
 /**当前选中的按钮*/
 @property (nonatomic,strong) UIButton * selectButton;
 
-@property (nonatomic, copy) TitleBtnCallBack  callBack;
+@property (nonatomic, strong) UIButton * titleButton;
 
 @end
 
-@implementation VTFilterView
+@implementation VTTopSliderView
 
-+(instancetype )createHeaderViewWithTitleArray:(NSArray *)titleArray callBack:(TitleBtnCallBack)callBack{
-    VTFilterView * view = [[VTFilterView alloc]initWithTitleArray:titleArray];
-    view.callBack = callBack;
++(instancetype )createHeaderViewWithTitleArray:(NSArray *)titleArray{
+    VTTopSliderView * view = [[VTTopSliderView alloc]initWithTitleArray:titleArray];
     [view loadAllComponents];
     return view;
 }
@@ -51,17 +50,6 @@
         self.titleButton.tag = BaseTag + i;
         [self.titleButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.titleButton];
-        if (i != 0) {
-            UIView * lineView = [[UIView alloc] init];
-            lineView.backgroundColor = [UIColor lightGrayColor];
-            [self.titleButton addSubview:lineView];
-            [lineView mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(self.titleButton).with.offset(0);
-                make.top.equalTo(self.titleButton).with.offset(13);
-                make.bottom.equalTo(self.titleButton).with.offset(-13);
-                make.width.mas_equalTo(.6);
-            }];
-        }
         //默认点击第一个按钮
         if (i == 0) {
             [self layoutIfNeeded];
@@ -71,7 +59,6 @@
 }
 
 -(void)btnClick:(UIButton *)sender{
-    self.callBack(sender.tag - BaseTag);
     self.selectButton.enabled = YES;
     [self.selectButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     sender.enabled = NO;
@@ -85,7 +72,7 @@
 }
 
 -(instancetype )initWithTitleArray:(NSArray *)array{
-    self = [self init];
+    self = [super init];
     if (self) {
         //初始化子控件
         self.titleArray = array;
@@ -94,13 +81,5 @@
     return self;
 }
 
-
--(instancetype )init{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
 
 @end

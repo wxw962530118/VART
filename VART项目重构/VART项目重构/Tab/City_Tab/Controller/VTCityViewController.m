@@ -10,9 +10,11 @@
 #import "VTFilterView.h"
 #import "VTFairTableViewCell.h"
 #import "VTSpaceTableViewCell.h"
-#import "VTCityTopMenuController.h"
 #import "VTCityNavMenuView.h"
 #import "VTCityNavMenuContentModel.h"
+
+#define WeakSelf  __weak typeof(self) weakSelf = self;
+
 @interface VTCityViewController ()<UITableViewDelegate,UITableViewDataSource>
 /**导航栏的菜单文字模型数组*/
 @property (nonatomic, strong) NSMutableArray<VTCityNavMenuContentModel *> * titleArray;
@@ -58,19 +60,15 @@
 }
 
 -(void)createNavMenuView{
+    WeakSelf;
     self.navMenuView = [VTCityNavMenuView initWithTitleArray:self.titleArray callBack:^(NSInteger selectIndex) {
-        [self.titleBtn setTitle:self.titleArray[selectIndex].title forState:UIControlStateNormal];
+        [weakSelf.titleBtn setTitle:weakSelf.titleArray[selectIndex].title forState:UIControlStateNormal];
     }];
 }
 
 #pragma mark --- 导航栏按钮点击事件
 - (void)titleBtnClick{
     [self.navMenuView showTopMenuView];
-    
-    
-    
-    
-    
 }
 
 #pragma mark --- 懒加载控件
@@ -115,14 +113,15 @@
 
 #pragma mark --- 创建筛选头
 - (void)createFilterView {
+    WeakSelf;
     self.filterArray = @[@"展览",@"同城"];
     self.filterView = [VTFilterView createHeaderViewWithTitleArray:self.filterArray callBack:^(NSInteger didSelectIndex) {
         if (!didSelectIndex) {
-            self.rightTableView.hidden = YES;
-            self.leftTableView.hidden = NO;
+            weakSelf.rightTableView.hidden = YES;
+            weakSelf.leftTableView.hidden = NO;
         }else {
-            self.rightTableView.hidden = NO;
-            self.leftTableView.hidden = YES;
+            weakSelf.rightTableView.hidden = NO;
+            weakSelf.leftTableView.hidden = YES;
         }
     }];
     self.filterView.frame = CGRectMake(0, 64, ScreenWidth, 50);
