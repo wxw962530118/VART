@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VTBaseViewController : UIViewController
-
+- (void)back;
 @end

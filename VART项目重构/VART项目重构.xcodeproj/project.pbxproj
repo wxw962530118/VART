@@ -94,6 +94,7 @@
 		ACEB14921E991D9000C50160 /* VTAusleseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB148F1E991D9000C50160 /* VTAusleseViewController.m */; };
 		ACEB14951E991DC200C50160 /* VTAusleseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB14941E991DC200C50160 /* VTAusleseHeaderView.m */; };
 		ACEB14981E99236B00C50160 /* VTFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB14971E99236B00C50160 /* VTFilterView.m */; };
+		ACF5D0A91EA49A1100530A79 /* VTScanQrCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D0A81EA49A1100530A79 /* VTScanQrCodeController.m */; };
 		ACF705351E9DFE5900922B95 /* VTCityNavMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */; };
 		ACF7054C1E9E067400922B95 /* VTCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705401E9E067400922B95 /* VTCityViewController.m */; };
 		ACF7054E1E9E067400922B95 /* VTFairTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF705461E9E067400922B95 /* VTFairTableViewCell.m */; };
@@ -288,6 +289,8 @@
 		ACEB14941E991DC200C50160 /* VTAusleseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTAusleseHeaderView.m; sourceTree = "<group>"; };
 		ACEB14961E99236B00C50160 /* VTFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFilterView.h; sourceTree = "<group>"; };
 		ACEB14971E99236B00C50160 /* VTFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFilterView.m; sourceTree = "<group>"; };
+		ACF5D0A71EA49A1100530A79 /* VTScanQrCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScanQrCodeController.h; sourceTree = "<group>"; };
+		ACF5D0A81EA49A1100530A79 /* VTScanQrCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScanQrCodeController.m; sourceTree = "<group>"; };
 		ACF705331E9DFE5900922B95 /* VTCityNavMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityNavMenuView.h; sourceTree = "<group>"; };
 		ACF705341E9DFE5900922B95 /* VTCityNavMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCityNavMenuView.m; sourceTree = "<group>"; };
 		ACF7053F1E9E067400922B95 /* VTCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCityViewController.h; sourceTree = "<group>"; };
@@ -731,6 +734,8 @@
 				AC359E1D1EA0B291003A5F65 /* VTExhibitionDetailsController.m */,
 				AC9CA5731EA1EB4F004D2850 /* VTSearchViewController.h */,
 				AC9CA5741EA1EB4F004D2850 /* VTSearchViewController.m */,
+				ACF5D0A71EA49A1100530A79 /* VTScanQrCodeController.h */,
+				ACF5D0A81EA49A1100530A79 /* VTScanQrCodeController.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1029,6 +1034,7 @@
 				ACA540201E9F711C00115BA7 /* VTLaunchViewController.m in Sources */,
 				ACA540131E9F4BC600115BA7 /* VTCityNetWork.m in Sources */,
 				ACEB147C1E98E99600C50160 /* ToolBaseClass.m in Sources */,
+				ACF5D0A91EA49A1100530A79 /* VTScanQrCodeController.m in Sources */,
 				ACA416D01E98D65400B03AEC /* UIButton+WebCache.m in Sources */,
 				AC359E1B1EA0B14B003A5F65 /* VTWaterfallLayout.m in Sources */,
 				ACA540261E9FA2D900115BA7 /* VTAusleseModel.m in Sources */,

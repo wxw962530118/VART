@@ -14,6 +14,7 @@
 #import "VTExhibitionDetailsController.h"
 #import "VTSearchBar.h"
 #import "VTSearchViewController.h"
+#import "VTScanQrCodeController.h"
 @interface VTAusleseViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView * ausleseTableView;
 
@@ -37,12 +38,14 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    if (![self.navigationController.viewControllers.lastObject isKindOfClass:NSClassFromString(@"VTScanQrCodeController")])
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 }
 
 - (void)viewDidLoad {
@@ -200,7 +203,13 @@
 
 #pragma mark --- 进入扫码页面
 -(void)pushToQrVc{
-
+    VTScanQrCodeController  * vc = [[VTScanQrCodeController alloc]initWithBlock:^(NSString *result, BOOL isSucceed) {
+        VTAlertView(@"提示", result, @"确定",nil, ^(NSUInteger index) {
+            
+        });
+        NSLog(@"result--%@",result);
+    }];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{

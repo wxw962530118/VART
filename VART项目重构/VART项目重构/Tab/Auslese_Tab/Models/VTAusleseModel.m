@@ -10,8 +10,8 @@
 @implementation VTAusleseModel
 
 //定义的模型数组 要 对应 类型
-- (NSDictionary *)objectClassInArray
-{
-    return @{@"imagesArray" : [VTAusleseImageModel class]};
-}
+//- (NSDictionary *)objectClassInArray
+//{
+//    return @{@"imagesArray" : [VTAusleseImageModel class]};
+//}
 @end

@@ -40,7 +40,7 @@
     CGFloat width = 150 * wh;
     // w/? = h/150
     [self.contentImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(width);
+        make.width.mas_equalTo(width);
     }];
 }
 
